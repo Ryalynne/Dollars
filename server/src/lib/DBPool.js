@@ -1,9 +1,9 @@
 const DBPool = {
   dbConfig: {
-    host: `127.0.0.1`,
+    host: `milkize-db.cfcckusoq29y.ap-southeast-2.rds.amazonaws.com`,
     user:`root`,
-    password: `12345`,
-    database: `chatdb`
+    password: `12345678`,
+    database: `dollars_db`
   }
 }
 
