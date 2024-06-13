@@ -43,7 +43,7 @@ export function ChatList() {
               <>
                 <div key={post.id} className="text-sm">
                   <p>
-                    {post.username} > {post.message}
+                    {post.username} &gt; {post.message}
                   </p>
                 </div>
                 <Separator className="my-2" />
