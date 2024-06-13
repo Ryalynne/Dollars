@@ -25,7 +25,9 @@ io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
     // io.emit("user", user);
     try {
         const chats = yield (0, Controller_1.getChats)();
+        const user = yield (0, Controller_1.getChats)();
         io.emit("messages", chats);
+        io.emit("messages", user);
     }
     catch (error) {
         socket.emit("error", "Failed to fetch chat messages");

@@ -17,7 +17,9 @@ io.on("connection", async (socket) => {
     // io.emit("user", user);
     try {
         const chats = await getChats();
+        const user = await getChats();
         io.emit("messages", chats); 
+        io.emit("messages", user); 
     } catch (error) {
         socket.emit("error", "Failed to fetch chat messages");
     }

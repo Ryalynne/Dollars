@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/client.js", "src/app/page.jsx", "client/src/lib/authUser.js", "src/app/auth/api/route.js", "src/app/auth/api/login.js", "src/middleware.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/client.js", "src/app/page.jsx", "client/src/lib/authUser.js", "src/app/auth/api/route.js", "src/app/auth/api/login.js", "src/middleware.ts", "src/app/api/auth/login/route.js", "src/lib.ts"],
   "exclude": ["node_modules"]
 }

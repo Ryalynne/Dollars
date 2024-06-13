@@ -1,5 +1,4 @@
 import DBConnection from './DBConnection.js';
-
 export const getChats = async () => {
 
     try {
@@ -14,7 +13,6 @@ export const getChats = async () => {
         throw new Error("Failed to fetch chat messages");
     }
 }
-
 
 export const postChat = async (formData) => {
     "use server"

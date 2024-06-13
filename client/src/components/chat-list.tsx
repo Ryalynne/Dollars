@@ -27,13 +27,12 @@ export function ChatList() {
   socket.on("connect", () => {
     console.log("Connected");
   });
-  
+
   useEffect(() => {
     socket.on("messages", (chats) => {
       setMessage(chats);
     });
-  });
-
+  }, [socket]);
   return (
     <>
       <ScrollArea className="mt-4 h-[75vh] w-100 rounded-md border">
@@ -44,7 +43,7 @@ export function ChatList() {
               <>
                 <div key={post.id} className="text-sm">
                   <p>
-                    {post.username} {post.message}
+                    {post.username} > {post.message}
                   </p>
                 </div>
                 <Separator className="my-2" />
